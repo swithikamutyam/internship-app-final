@@ -1,0 +1,54 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="toggleSideBar()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>
+      <i routerLink="" class="bi bi-compass"></i>
+      EasyGO!</span>
+    <span class="example-spacer"></span>
+
+    <form class="nosubmit">
+      <input class="nosubmit" type="search" placeholder="Search...">
+    </form>
+
+    <button mat-icon-button class="example-timeline" aria-label="Example icon-button with timeline icon">
+      <mat-icon>timeline</mat-icon>
+    </button>
+
+    <button mat-button [matMenuTriggerFor]="beforeMenu">
+        <span class="material-icons">
+            account_circle
+        </span>
+    </button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+    <button mat-menu-item>
+      <span class="material-icons" style="font-size: 15px;">
+        question_answer
+        </span>
+      Messages</button>
+    <button mat-menu-item>
+      <span class="material-icons" style="font-size: 15px;">
+        notifications_active
+        </span>
+      Notifications</button>
+    <button mat-menu-item>
+      <span class="material-icons" style="font-size: 15px;">
+        settings
+        </span>
+      Settings</button>
+    <button mat-menu-item>
+      <span class="material-icons" style="font-size: 15px;">
+        help
+        </span>
+      Help</button>
+    <button mat-menu-item>
+      <span class="material-icons" style="font-size: 15px;">
+        logout
+        </span>
+      Sign Out</button>
+    </mat-menu>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  
+  <mat-divider></mat-divider>
